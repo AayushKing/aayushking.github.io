@@ -1,51 +1,107 @@
-<!-- AayushKing -->
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta name="Viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <style>
-  body {
-    font-family: Arial;
-    background-color: #f0f0f0;
-  }
-  .div {
-    position: relative;
-    width: 300px;
-    height: 100px;
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-    padding: 10px;
-  }
-  .anchor {
-    text-decoration: none;
-    color: blue;
-  }
-  .blank {
-    width: 0;
-    height: 50vh;
-  }
-  .more {
-    width: 30px;
-    height: 30px;
-    border: 1px solid black;
-    background-color: black;
-  }
-  </style>
-  <title>AayushKing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+    .bottom-bar {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      position: fixed;
+      box-shadow: 0px 4px 8px grey;
+      bottom: 0;
+      transform: translateX(-10px);
+      background-color: white;
+      z-index: 1;
+    }
+    .bottom-bar a {
+      text-decoration: none;
+    }
+    .bottom-bar a img {
+      margin: 20px;
+    }
+    .you {
+      border-radius: 50%;
+    }
+    .bottom-bar a:hover {
+      background-color: white;
+    }
+    .header {
+      display: flex;
+      width: 100%;
+      position: fixed;
+      box-shadow: 0px 4px 8px #f0f0f0;
+      transform: translateX(-10px);
+      background-color: white;
+      top: 0;
+      z-index: 1;
+    }
+    .header img {
+      margin: 10px;
+      transform: translateX(10px);
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 70px; 
+      padding-bottom: 70px; 
+    }
+    .post {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+      width: 300px;
+      height: auto;
+      box-shadow: 0px 4px 8px #bababa;
+      margin: 10px;
+      background-color: white;
+    }
+    .post img {
+      box-shadow: 0px 4px 8px #bababa;
+    }
+    .username {
+      display: flex;
+      flex-direction: row;
+    }
+    .username img {
+      box-shadow: none;
+    }
+    .username h4 {
+      transform:translateX(10px);
+    }
+    </style>
+    <title>AayushKing</title>
 </head>
 <body>
-  <header>
-    <h1 align="center">
-      Hello, This is Aayush
-    </h1>
-  </header>
-  <center>
-    <div class="div">
-      <h3>Here are My Few Projects</h3>
-      <a href="https://aayushking.github.io/Father-s-Day" class="anchor">Father Day</a>
-    </div>
-  </center>
+  <div class="header">
+    <img src="https://i.postimg.cc/nc23QSmS/Aayush-King.png" width="19px" height="43px">
+  </div>
+  <div class="content">
+    <div class="post"><div class="username"><img class="you" src="https://i.postimg.cc/Dztf5s9J/channels4-profile.jpg" width="48px" height="48px"><h4>AayushKing</h4></div><p>AayushKing Is The Best.</p><img src="https://i.postimg.cc/Dztf5s9J/channels4-profile.jpg"></div>
+    <div class="post"><div class="username"><img class="you" src="https://yt3.googleusercontent.com/LVNiWg3uKx2BlP7KzNYqrs9obts8lLHhvWgr7XMBpY7KtQKKFUVt-ZIvnGNfRvzyqvRwhJfG=s160-c-k-c0x00ffffff-no-rj" width="48px" height="48px"><h4>SwatiQueen</h4></div><p>SwatiQueen Is Better Than Aayush.</p><img src="https://yt3.googleusercontent.com/LVNiWg3uKx2BlP7KzNYqrs9obts8lLHhvWgr7XMBpY7KtQKKFUVt-ZIvnGNfRvzyqvRwhJfG=s160-c-k-c0x00ffffff-no-rj"></div>
+  </div>
+  <div style="height: 2vh;"></div>
+  <div class="bottom-bar">
+    <a href="#">
+      <img src="https://i.postimg.cc/xTVMGP5M/home-24dp-5-F6368-FILL0-wght400-GRAD0-opsz24.png" width="36px" height="36px">
+    </a>
+    <a href="#">
+      <img src="https://i.postimg.cc/527Xr5BP/add-24dp-5-F6368-FILL0-wght400-GRAD0-opsz24.png" width="36px" height="36px">
+    </a>
+    <a href="#">
+      <img src="https://i.postimg.cc/RVJphGFt/search-24dp-5-F6368-FILL0-wght400-GRAD0-opsz24.png" width="36px" height="36px">
+    </a>
+    <a href="#">
+      <img class="you" src="https://i.postimg.cc/Dztf5s9J/channels4-profile.jpg" width="36px" height="36px">
+    </a>
+  </div>
 </body>
 </html>
